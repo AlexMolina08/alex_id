@@ -5,7 +5,14 @@ void main() => runApp(MaterialApp(
 ));
 
 
-class AlexCard extends StatelessWidget{
+class AlexCard extends StatefulWidget{
+  @override
+  _AlexCardState createState() => _AlexCardState();
+}
+
+class _AlexCardState extends State<AlexCard> {
+
+  
 
   @override
   Widget build(BuildContext context){
