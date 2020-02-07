@@ -1,3 +1,7 @@
 # alex_id
 
-A new Flutter application.
+A simple UI app that shows information about the author 
+
+
+<img src="screenshot.png" height="540" width="1080">
+
