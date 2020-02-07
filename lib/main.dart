@@ -12,7 +12,7 @@ class AlexCard extends StatefulWidget{
 
 class _AlexCardState extends State<AlexCard> {
 
-  
+
 
   @override
   Widget build(BuildContext context){
