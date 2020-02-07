@@ -22,7 +22,7 @@ class AlexCard extends StatelessWidget{
         elevation: 0
       ),
 
-      //Limitamos con un Padding los limites de la columna
+      //Limitamos con un Padding la columna
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         //Creamos la columna (Va a ser el Layout de la app)
@@ -53,13 +53,55 @@ class AlexCard extends StatelessWidget{
                 )
             ),
 
-          ]
+            SizedBox(height:30),
 
+            Text(
+                'Curso Actual',
+                style: TextStyle(
+                  color: Colors.red[800],
+                  letterSpacing: 1.2,
+                  fontSize: 15.0,
+                )
+            ),
+
+
+            SizedBox(height: 10), //Este widget sirve para añadir espacio entre los otros
+
+            Text(
+                '2º',
+                style: TextStyle(
+                    color: Colors.black87,
+                    letterSpacing: 1.2,
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold
+                )
+            ),
+
+
+            SizedBox(height: 30.0),
+
+            //Creamos una fila donde poner un icono y el correo
+            Row(
+
+              children: <Widget>[
+                Icon(Icons.mail , color: Colors.red[800]),
+                SizedBox(width: 10.0),
+                Text(
+                 'alex98criado@gmail.com',
+                 style: TextStyle(
+                   fontFamily: 'Orbitron',
+                   fontSize: 15.0
+                 ),)
+
+              ],
+
+            )
+
+
+          ]
         )
       )
     );
-
   }
-
 }
 
