@@ -27,21 +27,17 @@ class AlexCard extends StatelessWidget{
         //Creamos la columna (Va a ser el Layout de la app)
         child:Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-
           children: <Widget>[
-
             Center(
               child:CircleAvatar(
                 backgroundImage: AssetImage('assets/user.png'),
                 radius: 40.0
               ),
             ),
-
             Divider(
               height: 90.0,
               thickness: 1.0,
             ),
-
             Text(
               'NOMBRE',
               style: TextStyle(
@@ -50,10 +46,7 @@ class AlexCard extends StatelessWidget{
                 fontSize: 15.0,
               )
             ),
-
-
             SizedBox(height: 10), //Este widget sirve para añadir espacio entre los otros
-
             Text(
                 'Alex Molina',
                 style: TextStyle(
@@ -65,7 +58,6 @@ class AlexCard extends StatelessWidget{
             ),
 
             SizedBox(height:30),
-
             Text(
                 'Curso Actual',
                 style: TextStyle(
@@ -74,10 +66,7 @@ class AlexCard extends StatelessWidget{
                   fontSize: 15.0,
                 )
             ),
-
-
             SizedBox(height: 10), //Este widget sirve para añadir espacio entre los otros
-
             Text(
                 '2º',
                 style: TextStyle(
@@ -87,7 +76,6 @@ class AlexCard extends StatelessWidget{
                     fontWeight: FontWeight.bold
                 )
             ),
-
 
             SizedBox(height: 30.0),
 
@@ -107,8 +95,6 @@ class AlexCard extends StatelessWidget{
               ],
 
             )
-
-
           ]
         )
       )
