@@ -3,5 +3,5 @@
 A simple UI app that shows information about the author 
 
 
-<img src="screenshot.png" height="540" width="1080">
+<img src="screenshot.png" height="1080" width="540">
 
