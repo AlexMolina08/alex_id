@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -12,7 +14,7 @@ class AlexCard extends StatefulWidget{
 
 class _AlexCardState extends State<AlexCard> {
 
-
+  int nivelAlex = 0;
 
   @override
   Widget build(BuildContext context){
@@ -26,6 +28,16 @@ class _AlexCardState extends State<AlexCard> {
         centerTitle: true,
         backgroundColor: Colors.grey[400],
         elevation: 0
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red[800],
+        onPressed: (){
+          setState(() {
+            nivelAlex++;
+          });
+        },
+        child: Icon(Icons.add),
       ),
 
       //Limitamos con un Padding la columna
@@ -66,7 +78,7 @@ class _AlexCardState extends State<AlexCard> {
 
             SizedBox(height:30),
             Text(
-                'Curso Actual',
+                'Nivel de Programacion',
                 style: TextStyle(
                   color: Colors.red[800],
                   letterSpacing: 1.2,
@@ -75,7 +87,7 @@ class _AlexCardState extends State<AlexCard> {
             ),
             SizedBox(height: 10), //Este widget sirve para añadir espacio entre los otros
             Text(
-                '2º',
+                '$nivelAlex',
                 style: TextStyle(
                     color: Colors.black87,
                     letterSpacing: 1.2,
@@ -100,10 +112,9 @@ class _AlexCardState extends State<AlexCard> {
                  ),)
 
               ],
-
-            )
+            ),
           ]
-        )
+        ),
       )
     );
   }
