@@ -15,7 +15,6 @@ class AlexCard extends StatelessWidget{
         title: Text(
           "Carta de Presentación" ,
           style:TextStyle(color: Colors.red[400] , fontWeight: FontWeight.bold),
-
         ),
         centerTitle: true,
         backgroundColor: Colors.grey[400],
@@ -27,10 +26,22 @@ class AlexCard extends StatelessWidget{
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         //Creamos la columna (Va a ser el Layout de la app)
         child:Column(
-
           crossAxisAlignment: CrossAxisAlignment.start,
 
           children: <Widget>[
+
+            Center(
+              child:CircleAvatar(
+                backgroundImage: AssetImage('assets/user.png'),
+                radius: 40.0
+              ),
+            ),
+
+            Divider(
+              height: 90.0,
+              thickness: 1.0,
+            ),
+
             Text(
               'NOMBRE',
               style: TextStyle(
